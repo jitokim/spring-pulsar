@@ -303,6 +303,7 @@ public class CachingPulsarProducerFactory<T> extends DefaultPulsarProducerFactor
 			return this.producer.getLastSequenceId();
 		}
 
+		@SuppressWarnings("deprecation")
 		@Override
 		public ProducerStats getStats() {
 			return this.producer.getStats();
